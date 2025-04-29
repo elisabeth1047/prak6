@@ -9,3 +9,7 @@ use App\Http\Controllers\ProductController;
 
 
 Route::get('/list_product', [ProductController::class, 'list']);
+
+Route::get('home', function () {
+    return view('pages/home');
+});
